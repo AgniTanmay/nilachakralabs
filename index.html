@@ -2,36 +2,45 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Nilachakra Labs — AI Visitor Analytics (India)</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Nilachakra Labs — AI Visitor Analytics (India)</title>
 
-    <!-- Primary meta tags -->
-    <meta name="description"
-        content="Nilachakra Labs — AI-driven visitor & web analytics for universities. Based in Odisha and serving institutions across Bhubaneswar (BBSR) and India. Tool currently under development (private alpha)." />
-    <meta name="keywords"
-        content="Nilachakra Labs, AI web analytics, university analytics, visitor tracking, student enrollment analytics, Bhubaneswar labs, labs in Odisha, best labs in India, research labs BBSR, Agni Tanmaya Behera" />
-    <meta name="author" content="Agni Tanmaya Behera" />
-    <meta name="robots" content="index,follow" />
-    <link rel="canonical" href="https://nilachakralabs.com/" />
+  <!-- Primary meta tags -->
+  <meta name="description"
+    content="Nilachakra Labs — AI-driven visitor & web analytics for universities. Based in Odisha and serving institutions across Bhubaneswar (BBSR) and India. Tool currently under development (private alpha)." />
+  <meta name="keywords"
+    content="Nilachakra Labs, AI web analytics, university analytics, visitor tracking, student enrollment analytics, Bhubaneswar labs, labs in Odisha, best labs in India, research labs BBSR, Agni Tanmaya Behera" />
+  <meta name="author" content="Agni Tanmaya Behera" />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://nilachakralabs.com/" />
 
-    <!-- Favicons / Icons -->
-    <link rel="icon" href="./Nilachakra_Labs.png" sizes="32x32" />
-    <link rel="apple-touch-icon" href="./Nilachakra_Labs.png" />
 
-    <!-- Open Graph & Twitter Card (keep as before) -->
-    <meta property="og:site_name" content="Nilachakra Labs" />
-    <meta property="og:title" content="Nilachakra Labs — AI Visitor Analytics for Universities" />
-    <meta property="og:description"
-        content="AI-powered visitor analytics that help universities convert more visitors into inquiries and applicants with clear recommendations. Serving universities in Odisha (Bhubaneswar) and across India. Tool under development." />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://nilachakralabs.com/" />
-    <meta property="og:image" content="https://nilachakralabs.com/assets/logo-1200x630.png" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:image" content="https://nilachakralabs.com/assets/logo-1200x630.png" />
+  <!-- Citation meta tags for academic indexing / discovery -->
+  <meta name="citation_title"
+    content="Artificial Intelligence-Powered Web Analytics Tool for Universities: Visitor Categorization & Behavioral Data Analysis for Strategic Outreach">
+  <meta name="citation_author" content="Agni Tanmaya Behera">
+  <meta name="citation_publication_date" content="2025-09-30">
+  <meta name="citation_pdf_url" content="https://nilachakralabs.com/Agni_Tanmaya_Behera_Paper1.pdf">
+  <meta name="citation_publisher" content="Zenodo (preprint)">
 
-    <!-- Schema (keeps search engines happy) -->
-    <script type="application/ld+json">
+  <!-- Favicons / Icons -->
+  <link rel="icon" href="./Nilachakra_Labs.png" sizes="32x32" />
+  <link rel="apple-touch-icon" href="./Nilachakra_Labs.png" />
+
+  <!-- Open Graph & Twitter Card (keep as before) -->
+  <meta property="og:site_name" content="Nilachakra Labs" />
+  <meta property="og:title" content="Nilachakra Labs — AI Visitor Analytics for Universities" />
+  <meta property="og:description"
+    content="AI-powered visitor analytics that help universities convert more visitors into inquiries and applicants with clear recommendations. Serving universities in Odisha (Bhubaneswar) and across India. Tool under development." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://nilachakralabs.com/" />
+  <meta property="og:image" content="https://nilachakralabs.com/assets/logo-1200x630.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://nilachakralabs.com/assets/logo-1200x630.png" />
+
+  <!-- Schema (keeps search engines happy) -->
+  <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Organization",
@@ -53,410 +62,498 @@
   }
   </script>
 
-    <!-- Fonts (unchanged) -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap"
-        rel="stylesheet">
+  <!-- Fonts (unchanged) -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap"
+    rel="stylesheet">
 
-    <!-- Responsive CSS -->
-    <style>
-        :root {
-            --bg: #071227;
-            --card: rgba(255, 255, 255, 0.02);
-            --muted: #9aa4b2;
-            --accent1: #6dd3f5;
-            --accent2: #3bb0e0;
-            --accent-foreground: #042233;
-            --warn: #ffda6a;
-            --max-width: 1200px;
-            --radius: 12px;
-            --glass: 0 10px 40px rgba(0, 0, 0, 0.6);
-        }
+  <!-- Responsive CSS -->
+  <style>
+    :root {
+      --bg: #071227;
+      --card: rgba(255, 255, 255, 0.02);
+      --muted: #9aa4b2;
+      --accent1: #6dd3f5;
+      --accent2: #3bb0e0;
+      --accent-foreground: #042233;
+      --warn: #ffda6a;
+      --max-width: 1200px;
+      --radius: 12px;
+      --glass: 0 10px 40px rgba(0, 0, 0, 0.6);
+    }
 
-        /* Reset & base */
-        *,
-        *::before,
-        *::after {
-            box-sizing: border-box
-        }
+    /* Reset & base */
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box
+    }
 
-        html,
-        body {
-            height: 100%
-        }
+    html,
+    body {
+      height: 100%
+    }
 
-        body {
-            margin: 0;
-            background: linear-gradient(180deg, var(--bg), #041025);
-            color: #eaf3fb;
-            font-family: Inter, system-ui, Arial, sans-serif;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-            line-height: 1.45;
-            padding: 24px 16px;
-        }
+    body {
+      margin: 0;
+      background: linear-gradient(180deg, var(--bg), #041025);
+      color: #eaf3fb;
+      font-family: Inter, system-ui, Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      line-height: 1.45;
+      padding: 24px 16px;
+    }
 
-        /* Container */
-        .wrap {
-            max-width: var(--max-width);
-            margin: 0 auto;
-            padding: 20px;
-        }
+    /* Container */
+    .wrap {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 20px;
+    }
 
-        /* Header */
-        header {
-            display: flex;
-            gap: 16px;
-            align-items: center;
-            justify-content: space-between;
-            margin-bottom: 10px;
-        }
+    /* Header */
+    header {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
 
-        .brand {
-            display: flex;
-            gap: 12px;
-            align-items: center;
-            font-family: 'Playfair Display', serif;
-            letter-spacing: 1px;
-        }
+    .brand {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      font-family: 'Playfair Display', serif;
+      letter-spacing: 1px;
+    }
 
-        .brand img {
-            width: 44px;
-            height: 44px;
-            border-radius: 9px;
-            object-fit: cover;
-            background: #fff;
-            flex: 0 0 44px;
-        }
+    .brand img {
+      width: 44px;
+      height: 44px;
+      border-radius: 9px;
+      object-fit: cover;
+      background: #fff;
+      flex: 0 0 44px;
+    }
 
-        .brand .title {
-            font-size: clamp(16px, 2vw, 20px);
-            font-weight: 700;
-        }
+    .brand .title {
+      font-size: clamp(16px, 2vw, 20px);
+      font-weight: 700;
+    }
 
-        nav.top-meta {
-            color: var(--muted);
-            font-size: 13px;
-        }
+    nav.top-meta {
+      color: var(--muted);
+      font-size: 13px;
+    }
 
-        /* Card */
-        .card {
-            background: var(--card);
-            padding: 20px;
-            border-radius: var(--radius);
-            box-shadow: var(--glass);
-            overflow: hidden;
-        }
+    /* Card */
+    .card {
+      background: var(--card);
+      padding: 20px;
+      border-radius: var(--radius);
+      box-shadow: var(--glass);
+      overflow: hidden;
+    }
 
-        /* Development badge */
-        .dev-badge {
-            display: inline-block;
-            background: rgba(255, 218, 106, 0.12);
-            color: #fff;
-            padding: 6px 10px;
-            border-radius: 999px;
-            font-size: 13px;
-            border: 1px solid rgba(255, 218, 106, 0.14);
-            margin-bottom: 14px;
-        }
+    /* Development badge */
+    .dev-badge {
+      display: inline-block;
+      background: rgba(255, 218, 106, 0.12);
+      color: #fff;
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-size: 13px;
+      border: 1px solid rgba(255, 218, 106, 0.14);
+      margin-bottom: 14px;
+    }
 
-        /* HERO */
-        .hero {
-            display: flex;
-            gap: 18px;
-            align-items: center;
-        }
+    /* HERO */
+    .hero {
+      display: flex;
+      gap: 18px;
+      align-items: center;
+    }
 
-        .photo {
-            width: clamp(96px, 12vw, 160px);
-            height: clamp(96px, 12vw, 160px);
-            border-radius: 10px;
-            overflow: hidden;
-            background: #fff;
-            flex: 0 0 auto;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+    .photo {
+      width: clamp(96px, 12vw, 160px);
+      height: clamp(96px, 12vw, 160px);
+      border-radius: 10px;
+      overflow: hidden;
+      background: #fff;
+      flex: 0 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
-        .photo img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block
-        }
+    .photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block
+    }
 
-        h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: clamp(18px, 3.6vw, 30px);
-            margin: 0 0 6px 0;
-            color: #fff;
-        }
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(18px, 3.6vw, 30px);
+      margin: 0 0 6px 0;
+      color: #fff;
+    }
 
-        p.lead {
-            color: var(--muted);
-            margin: 6px 0 12px
-        }
+    p.lead {
+      color: var(--muted);
+      margin: 6px 0 12px
+    }
 
-        .cta {
-            display: inline-block;
-            padding: 10px 14px;
-            border-radius: 10px;
-            background: linear-gradient(90deg, var(--accent1), var(--accent2));
-            color: var(--accent-foreground);
-            font-weight: 700;
-            text-decoration: none;
-            font-size: 14px;
-        }
+    .cta {
+      display: inline-block;
+      padding: 10px 14px;
+      border-radius: 10px;
+      background: linear-gradient(90deg, var(--accent1), var(--accent2));
+      color: var(--accent-foreground);
+      font-weight: 700;
+      text-decoration: none;
+      font-size: 14px;
+    }
 
-        /* Grid layout */
-        .grid {
-            display: grid;
-            gap: 18px;
-            margin-top: 18px;
-        }
+    /* Grid layout */
+    .grid {
+      display: grid;
+      gap: 18px;
+      margin-top: 18px;
+    }
 
-        /* Default (mobile-first): single column */
-        .grid {
-            grid-template-columns: 1fr
-        }
+    /* Default (mobile-first): single column */
+    .grid {
+      grid-template-columns: 1fr
+    }
 
-        .box {
-            background: var(--card);
-            padding: 14px;
-            border-radius: 10px;
-        }
+    .box {
+      background: var(--card);
+      padding: 14px;
+      border-radius: 10px;
+    }
 
-        h2 {
-            font-family: 'Playfair Display', serif;
-            color: #fff;
-            margin: 10px 0 8px
-        }
+    h2 {
+      font-family: 'Playfair Display', serif;
+      color: #fff;
+      margin: 10px 0 8px
+    }
 
-        .benefit {
-            margin: 8px 0;
-            padding: 10px;
-            border-radius: 8px;
-            background: linear-gradient(180deg, rgba(255, 255, 255, 0.01), transparent)
-        }
+    .benefit {
+      margin: 8px 0;
+      padding: 10px;
+      border-radius: 8px;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.01), transparent)
+    }
 
-        ul {
-            margin: 8px 0 0;
-            padding-left: 1.05rem;
-            color: var(--muted)
-        }
+    ul {
+      margin: 8px 0 0;
+      padding-left: 1.05rem;
+      color: var(--muted)
+    }
 
-        footer {
-            margin-top: 18px;
-            color: var(--muted);
-            font-size: 13px;
-            text-align: center
-        }
+    footer {
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 13px;
+      text-align: center
+    }
 
-        /* Responsive breakpoints */
-        @media (min-width:720px) {
-            .wrap {
-                padding: 28px
-            }
+    /* Responsive breakpoints */
+    @media (min-width:720px) {
+      .wrap {
+        padding: 28px
+      }
 
-            .grid {
-                grid-template-columns: 1fr 320px
-            }
+      .grid {
+        grid-template-columns: 1fr 320px
+      }
 
-            .brand img {
-                width: 48px;
-                height: 48px
-            }
-        }
+      .brand img {
+        width: 48px;
+        height: 48px
+      }
+    }
 
-        @media (min-width:1024px) {
-            :root {
-                --max-width: 1100px
-            }
+    @media (min-width:1024px) {
+      :root {
+        --max-width: 1100px
+      }
 
-            .wrap {
-                padding: 36px
-            }
+      .wrap {
+        padding: 36px
+      }
 
-            .grid {
-                grid-template-columns: 1fr 360px;
-                gap: 22px
-            }
+      .grid {
+        grid-template-columns: 1fr 360px;
+        gap: 22px
+      }
 
-            .card {
-                padding: 28px
-            }
+      .card {
+        padding: 28px
+      }
 
-            .photo {
-                width: 180px;
-                height: 180px
-            }
+      .photo {
+        width: 180px;
+        height: 180px
+      }
 
-            h1 {
-                font-size: clamp(22px, 2.5vw, 34px)
-            }
-        }
+      h1 {
+        font-size: clamp(22px, 2.5vw, 34px)
+      }
+    }
 
-        @media (min-width:1440px) {
-            :root {
-                --max-width: 1300px
-            }
+    @media (min-width:1440px) {
+      :root {
+        --max-width: 1300px
+      }
 
-            .grid {
-                grid-template-columns: 1fr 420px;
-                gap: 28px
-            }
+      .grid {
+        grid-template-columns: 1fr 420px;
+        gap: 28px
+      }
 
-            .wrap {
-                padding: 40px
-            }
+      .wrap {
+        padding: 40px
+      }
 
-            .brand .title {
-                font-size: 22px
-            }
-        }
+      .brand .title {
+        font-size: 22px
+      }
+    }
 
-        /* Small visual tweaks for very small phones */
-        @media (max-width:360px) {
-            .cta {
-                padding: 9px 12px;
-                font-size: 13px
-            }
+    /* Small visual tweaks for very small phones */
+    @media (max-width:360px) {
+      .cta {
+        padding: 9px 12px;
+        font-size: 13px
+      }
 
-            .brand .title {
-                font-size: 16px
-            }
-        }
+      .brand .title {
+        font-size: 16px
+      }
+    }
 
-        /* Accessibility: focus states */
-        a:focus {
-            outline: 3px solid rgba(109, 211, 245, 0.18);
-            outline-offset: 3px;
-            border-radius: 6px
-        }
-    </style>
+    /* Accessibility: focus states */
+    a:focus {
+      outline: 3px solid rgba(109, 211, 245, 0.18);
+      outline-offset: 3px;
+      border-radius: 6px
+    }
+  </style>
 </head>
 
 <body>
-    <div class="wrap">
-        <header>
-            <div class="brand" aria-hidden="false">
-                <img src="./Nilachakra_Labs.png" alt="Nilachakra Labs logo">
-                <div>
-                    <div class="title">Nilachakra Labs</div>
-                    <div style="font-size:12px;color:var(--muted);margin-top:2px;">AI Visitor Analytics — India</div>
-                </div>
-            </div>
-            <nav class="top-meta" aria-label="site category">Research • Easy Web Insights • Labs in India</nav>
-        </header>
-        <!-- Bhrahmashtra alpha banner -->
-        <div
-            style="background:linear-gradient(90deg,#1b2a40,#0b1726);color:#fff;padding:10px 14px;border-radius:10px;margin-bottom:14px;display:flex;gap:12px;align-items:center;flex-wrap:wrap">
-            <div style="font-weight:700;display:flex;align-items:center;gap:8px">
-                <span style="background:#e6f148;color:#f70808;padding:6px 8px;border-radius:999px;font-size:14px">
-                    BHRAHMASHTRA</span>
-                <span style="font-size:15px">— AI Visitor Analytics for Student Enrollment</span>
-            </div>
-            <div style="margin-left:auto;font-size:14px">
-                <a href="mailto:founder@nilachakralabs.com?subject=Bhrahmashtra%20Private%20Alpha%20Request"
-                    style="background:#6dd3f5;color:#042233;padding:8px 12px;border-radius:8px;text-decoration:none;font-weight:700">Request
-                    demo / Join alpha</a>
-            </div>
+  <div class="wrap">
+    <header>
+      <div class="brand" aria-hidden="false">
+        <img src="./Nilachakra_Labs.png" alt="Nilachakra Labs logo">
+        <div>
+          <div class="title">Nilachakra Labs</div>
+          <div style="font-size:12px;color:var(--muted);margin-top:2px;">AI Visitor Analytics — India</div>
+        </div>
+      </div>
+      <nav class="top-meta" aria-label="site category">Research • Easy Web Insights • Labs in India</nav>
+    </header>
+    <!-- Bhrahmashtra alpha banner -->
+    <div
+      style="background:linear-gradient(90deg,#1b2a40,#0b1726);color:#fff;padding:10px 14px;border-radius:10px;margin-bottom:14px;display:flex;gap:12px;align-items:center;flex-wrap:wrap">
+      <div style="font-weight:700;display:flex;align-items:center;gap:8px">
+        <span style="background:#e6f148;color:#f70808;padding:6px 8px;border-radius:999px;font-size:14px">
+          BHRAHMASHTRA</span>
+        <span style="font-size:15px">— AI Visitor Analytics for Student Enrollment</span>
+      </div>
+      <div style="margin-left:auto;font-size:14px">
+        <a href="mailto:founder@nilachakralabs.com?subject=Bhrahmashtra%20Private%20Alpha%20Request"
+          style="background:#6dd3f5;color:#042233;padding:8px 12px;border-radius:8px;text-decoration:none;font-weight:700">Request
+          demo / Join alpha</a>
+      </div>
+    </div>
+
+    <main class="card" role="main">
+      <div class="dev-badge">🔧 Tool under development — private alpha (invite-only)</div>
+
+      <div class="hero" role="region" aria-label="intro">
+        <div class="photo" aria-hidden="true">
+          <img src="./profile.png" alt="Agni Tanmaya Behera">
         </div>
 
-        <main class="card" role="main">
-            <div class="dev-badge">🔧 Tool under development — private alpha (invite-only)</div>
+        <div>
+          <h1>Agni Tanmaya Behera — Founder, Nilachakra Labs</h1>
+          <p class="lead"><strong>AI-driven web analytics made simple.</strong> We help universities and
+            organisations
+            understand real visitors, improve outreach, and increase enquiries — without the technical
+            jargon. Serving
+            institutions in Odisha and across India.</p>
+          <a class="cta" href="mailto:founder@nilachakralabs.com" aria-label="Request demo">Request demo /
+            Join private
+            alpha</a>
+        </div>
+      </div>
 
-            <div class="hero" role="region" aria-label="intro">
-                <div class="photo" aria-hidden="true">
-                    <img src="./profile.png" alt="Agni Tanmaya Behera">
-                </div>
+      <div class="grid" aria-live="polite">
+        <section>
+          <h2>What we do (in plain words)</h2>
+          <p class="muted">We turn website activity into clear, usable guidance for your team. Instead of long
+            reports
+            with numbers you don’t use, we give you simple recommendations: who to contact, what pages to
+            fix, and when
+            to run campaigns to get more students or visitors.</p>
 
-                <div>
-                    <h1>Agni Tanmaya Behera — Founder, Nilachakra Labs</h1>
-                    <p class="lead"><strong>AI-driven web analytics made simple.</strong> We help universities and
-                        organisations
-                        understand real visitors, improve outreach, and increase enquiries — without the technical
-                        jargon. Serving
-                        institutions in Odisha and across India.</p>
-                    <a class="cta" href="mailto:founder@nilachakralabs.com" aria-label="Request demo">Request demo /
-                        Join private
-                        alpha</a>
-                </div>
+          <div class="benefit">
+            <strong>Understand who visits:</strong>
+            <div class="muted">We group visitors into meaningful categories — for example: likely
+              applicants, casual
+              browsers, repeat visitors — so you know where to focus recruitment effort.</div>
+          </div>
+
+          <div class="benefit">
+            <strong>Improve conversion (more enquiries):</strong>
+            <div class="muted">We predict which visitors are most likely to take action (inquire or apply)
+              and suggest
+              small website or messaging changes that increase responses.</div>
+          </div>
+
+          <div class="benefit">
+            <strong>Plan better timing:</strong>
+            <div class="muted">We forecast when interest will rise (e.g., before admission deadlines or
+              events) so you
+              can schedule outreach at the right moment.</div>
+          </div>
+
+          <h2>Why this matters</h2>
+          <p class="muted">Traditional analytics show "what happened." This system answers "who is likely to
+            convert,"
+            "when interest will peak," and "what content to prioritize" — turning analytics into a strategic
+            decision-
+            support tool for universities.</p>
+
+          <h2>Typical results our clients see</h2>
+          <ul>
+            <li>Clear prioritization of high-potential leads — contact these first.</li>
+            <li>Improved webpage layouts that increase form submissions.</li>
+            <li>Better timing of campaigns, increasing enquiries around deadlines.</li>
+          </ul>
+
+
+          <!-- Copyright & Jurisdiction Warning -->
+          <div
+            style="background:#2b0f12;border-left:4px solid #ffda6a;color:#fff;padding:12px 14px;border-radius:8px;margin:14px 0;">
+            <strong style="display:block;font-size:15px;margin-bottom:6px;">Copyright Notice — Protected Work</strong>
+            <div style="color:#f0eede;font-size:14px;line-height:1.4;">
+              The preprint and all content on this page are the copyrighted work of <strong>Agni Tanmaya
+                Behera</strong>.
+              Unauthorized copying, redistribution, reproduction, or commercial use is strictly prohibited.
+              This work has been filed with the Copyright Office (Diary No. <strong>LD 42796/2025-CO</strong>) and
+              published as a preprint (DOI: <strong>10.5281/zenodo.17231544</strong>).
+              Any infringement will be subject to legal action under applicable copyright laws; disputes will be
+              governed by the laws of India and the courts of New Delhi.
             </div>
+          </div>
 
-            <div class="grid" aria-live="polite">
-                <section>
-                    <h2>What we do (in plain words)</h2>
-                    <p class="muted">We turn website activity into clear, usable guidance for your team. Instead of long
-                        reports
-                        with numbers you don’t use, we give you simple recommendations: who to contact, what pages to
-                        fix, and when
-                        to run campaigns to get more students or visitors.</p>
 
-                    <div class="benefit">
-                        <strong>Understand who visits:</strong>
-                        <div class="muted">We group visitors into meaningful categories — for example: likely
-                            applicants, casual
-                            browsers, repeat visitors — so you know where to focus recruitment effort.</div>
-                    </div>
+          <!-- Research section starts here -->
+          <div class="research-wrap" id="research">
+            <div>
+              <h2>Research Foundation — Preprint</h2>
+              <p style="color:var(--muted);margin-top:6px;">
+                The Nilachakra Labs platform is founded on academic research. Below is the preprint that
+                describes the AI models, visitor categorization methodology and the strategic outreach
+                framework used in Bhrahmashtra.
+              </p>
 
-                    <div class="benefit">
-                        <strong>Improve conversion (more enquiries):</strong>
-                        <div class="muted">We predict which visitors are most likely to take action (inquire or apply)
-                            and suggest
-                            small website or messaging changes that increase responses.</div>
-                    </div>
+              <p style="color:var(--muted);">
+                <strong>Paper:</strong>
+                Artificial Intelligence-Powered Web Analytics Tool for Universities: Visitor Categorization
+                & Behavioral Data Analysis for Strategic Outreach.
+              </p>
 
-                    <div class="benefit">
-                        <strong>Plan better timing:</strong>
-                        <div class="muted">We forecast when interest will rise (e.g., before admission deadlines or
-                            events) so you
-                            can schedule outreach at the right moment.</div>
-                    </div>
-
-                    <h2>Why this matters</h2>
-                    <p class="muted">Traditional analytics show "what happened." This system answers "who is likely to
-                        convert,"
-                        "when interest will peak," and "what content to prioritize" — turning analytics into a strategic
-                        decision-
-                        support tool for universities.</p>
-
-                    <h2>Typical results our clients see</h2>
-                    <ul>
-                        <li>Clear prioritization of high-potential leads — contact these first.</li>
-                        <li>Improved webpage layouts that increase form submissions.</li>
-                        <li>Better timing of campaigns, increasing enquiries around deadlines.</li>
-                    </ul>
-                </section>
-
-                <aside class="box" aria-label="quick snapshot">
-                    <h2>Quick Snapshot</h2>
-                    <p class="muted"><strong>Goal:</strong> Increase student enrollment and improve outreach.</p>
-                    <p class="muted"><strong>Deliverables:</strong></p>
-                    <ul>
-                        <li>Monthly simple dashboard with top 5 actions</li>
-                        <li>Top 50 visitor list to contact (tagged by priority)</li>
-                        <li>2 tactical pages or messages to update</li>
-                    </ul>
-
-                    <h2 style="margin-top:12px">How we work</h2>
-                    <p class="muted">We connect to your website data (securely), run short analyses, and deliver clear
-                        steps your
-                        team can use immediately. We can also train a staff member to use the dashboard.</p>
-
-                    <h2 style="margin-top:12px">Ready for a short demo?</h2>
-                    <a class="cta" href="mailto:founder@nilachakralabs.com" aria-label="Request demo">Request demo /
-                        Join private
-                        alpha</a>
-                </aside>
+              <div class="research-actions" style="margin-top:10px">
+                <a class="btn" href="./Agni_Tanmaya_Behera_Paper1.pdf" target="_blank" rel="noopener">📄 Open Preprint
+                  (PDF)</a>
+                <a class="btn" href="./Agni_Tanmaya_Behera_Paper1.pdf" download
+                  style="background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted);font-weight:600">⬇️
+                  Download PDF</a>
+                <!-- Replace DOI link with your Zenodo DOI URL if available -->
+                <a class="link-muted" href="https://zenodo.org/record/17231544" target="_blank" rel="noopener">Zenodo
+                  DOI: 10.5281/zenodo.17231544</a>
+              </div>
             </div>
+            <!-- PDF embed (responsive) -->
+            <div class="research-embed" style="min-height:360px;">
+              <!-- Embedded PDF viewer: adjust src path if your PDF is in a different folder -->
+              <iframe src="./Agni_Tanmaya_Behera_Paper1.pdf#view=FitH" width="100%" height="520"
+                style="border:0;background:#0b1116;" title="Preprint PDF viewer"></iframe>
+            </div>
+          </div>
+          <!-- Research section ends here -->
+        </section>
 
-            <footer>
-                © 2025 Agni Tanmaya Behera (Nilachakra Labs™). All rights reserved.
-            </footer>
-        </main>
-    </div>
+        <aside class="box" aria-label="quick snapshot">
+          <h2>Quick Snapshot</h2>
+          <p class="muted"><strong>Goal:</strong> Increase student enrollment and improve outreach.</p>
+          <p class="muted"><strong>Deliverables:</strong></p>
+          <ul>
+            <li>Monthly simple dashboard with top 5 recommended actions</li>
+            <li>Top 50 visitor list to contact (tagged by interest & likelihood)</li>
+            <li>2 website sections or messages optimized per analysis cycle</li>
+          </ul>
+
+          <h2 style="margin-top:12px">About Nilachakra Labs</h2>
+          <p class="muted">
+            <strong>Nilachakra Labs</strong> is a research-backed startup from Odisha developing
+            <strong>Bhrahmashtra</strong> — an AI-driven visitor and enrollment analytics platform for
+            universities and institutions across India.
+            The project combines real-time web analytics, behavioral prediction, and strategic outreach tools
+            built for educational ecosystems.
+          </p>
+
+          <h2 style="margin-top:12px">Collaboration — Pilots</h2>
+          <p class="muted">
+            We welcome partnerships with universities, government bodies, and research institutions
+            for early adoption and pilot studies.
+            Interested in integrating the Bhrahmashtra tool into your admission system?
+          </p>
+          <a class="cta" href="mailto:founder@nilachakralabs.com?subject=Pilot%20Collaboration%20Request">📩
+            Contact for Pilot Collaboration</a>
+
+          <h2 style="margin-top:12px">Privacy — Copyright</h2>
+          <p class="muted" style="font-size:13.5px;">
+            © 2025 Agni Tanmaya Behera (Nilachakra Labs™).
+            All content and research, including the <strong>Bhrahmashtra</strong> tool and preprint
+            “AI-Powered Web Analytics Tool for Universities,” are under registered copyright
+            (Diary No. <strong>LD 42796/2025-CO</strong>).
+            Unauthorized copying, redistribution, or reverse-engineering of the system or paper
+            is strictly prohibited and may lead to legal action under applicable laws in India.
+            Jurisdiction: Courts of New Delhi.
+          </p>
+
+          <h2 style="margin-top:12px">Stay Connected</h2>
+          <p class="muted">Follow updates and releases from Nilachakra Labs.</p>
+          <ul style="list-style:none;padding-left:0;margin-top:4px;">
+            <li><a href="https://www.linkedin.com/in/agni-tanmaya-behera/" target="_blank"
+                style="color:#6dd3f5;text-decoration:none;">🔗 LinkedIn — Agni Tanmaya Behera</a></li>
+            <li><a href="mailto:founder@nilachakralabs.com" style="color:#6dd3f5;text-decoration:none;">📧
+                founder@nilachakralabs.com</a></li>
+            <li><a href="https://nilachakralabs.com" style="color:#6dd3f5;text-decoration:none;">🌐
+                nilachakralabs.com</a></li>
+          </ul>
+        </aside>
+
+      </div>
+
+      <footer>
+        © 2025 Agni Tanmaya Behera (Nilachakra Labs™). All rights reserved.
+        This website and the preprint “Artificial Intelligence-Powered Web Analytics Tool for Universities” (DOI:
+        10.5281/zenodo.17231544; Diary No. LD 42796/2025-CO) are protected by copyright. Unauthorized copying or
+        distribution is prohibited. Report suspected infringement: <a href="mailto:founder@nilachakralabs.com"
+          style="color:#6dd3f5;">founder@nilachakralabs.com</a>. Legal jurisdiction: India (courts of New Delhi).
+      </footer>
+    </main>
+  </div>
 </body>
 
 </html>
